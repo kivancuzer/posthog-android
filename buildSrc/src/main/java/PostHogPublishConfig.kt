@@ -104,7 +104,7 @@ fun MavenPublication.postHogConfig(
 ) {
     groupId = "com.posthog"
     artifactId = projectName
-    version = properties[PostHogPublishConfig.versionNameProperty].toString()
+    version = properties[PostHogPublishConfig.versionNameProperty].toString() + "-local"
 }
 
 fun SigningExtension.postHogConfig(
